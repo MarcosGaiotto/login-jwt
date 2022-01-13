@@ -19,7 +19,8 @@ const userSchema = database.define('user', {
         type: Sequelize.STRING,
         required: true,
         minLength: 3,
-        maxLength: 100
+        maxLength: 100,
+        unique: true
     },
     password: {
         type: Sequelize.STRING,
