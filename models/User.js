@@ -27,6 +27,11 @@ const userSchema = database.define('user', {
         required: true,
         minLength: 6,
         maxLength: 200
+    },
+    admin: {
+        type: Sequelize.BOOLEAN,
+        allowNull: false,
+        defaultValue: false
     }
 })
  
